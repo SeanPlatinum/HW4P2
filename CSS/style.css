@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#inputContainer {
+    width: 200px;
+    margin-right: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label {
+    display: block;
+    margin-top: 5px;
+}
+
+input {
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 3px;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#mainContainer {
+    display: flex;
+    align-items: flex-start;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+    top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #f6f1f1;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+#notification {
+    color: red;
+    width: calc(100% - 220px);
+}
+
+.ui-tabs .ui-tabs-nav li .ui-icon-close {
+    float: left;
+    margin: 0.4em 0.2em 0 0;
+    cursor: pointer;
+}
+
+#start_Row_slider, #end_Row_slider, #start_Col_slider, #end_Col_slider {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.tableContainer {
+    overflow: auto;
+    max-height: 400px;
+    border: 1px solid #000;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}

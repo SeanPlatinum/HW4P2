@@ -1,0 +1,56 @@
+<!--/*
+Sean Diaz 6/10/24
+HW4 P2 Wenjin Zhou GUI PROGRAMMING
+index.html
+
+had to include more src than what may have been intended, learned a lot about DIV structuring 
+and how parents effect children...
+
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</head>
+<body>
+    <h1>Sean Diaz's Dynamic Multiplication Table</h1>
+    <form id="tableForm">
+        <div id="inputContainer">
+            <label for="start_Row">Start Row:</label>
+            <input type="number" id="start_Row" name="start_Row" required><br>
+            <div id="start_Row_slider"></div><br>
+
+            <label for="end_Row">End Row:</label>
+            <input type="number" id="end_Row" name="end_Row" required><br>
+            <div id="end_Row_slider"></div><br>
+
+            <label for="start_Col">Start Column:</label>
+            <input type="number" id="start_Col" name="start_Col" required><br>
+            <div id="start_Col_slider"></div><br>
+
+            <label for="end_Col">End Column:</label>
+            <input type="number" id="end_Col" name="end_Col" required><br>
+            <div id="end_Col_slider"></div><br>
+
+            <button type="submit">Generate Table</button>
+        </div>
+    </form>
+    <div id="notification"></div>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tab-1">Table 1 <span class='ui-icon ui-icon-close' role='presentation'></span></a></li>
+        </ul>
+        <div id="tab-1">
+            <div id="tableContainer-1" class="tableContainer"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
